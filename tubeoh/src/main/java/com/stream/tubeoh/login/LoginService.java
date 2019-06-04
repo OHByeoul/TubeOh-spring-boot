@@ -5,12 +5,14 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.stream.tubeoh.dto.User;
+
 @Service
 public class LoginService {
 	private static final Logger logger = LoggerFactory.getLogger(LoginService.class);
 	
 	@Autowired
-	UserRepository userRepository;
+	LoginRepository userRepository;
 	
 	public boolean checkLoginInfo(String id, String pw) {
 		User getUser = userRepository.findById(id).orElse(new User());

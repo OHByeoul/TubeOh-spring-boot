@@ -1,4 +1,4 @@
-package com.stream.tubeoh.login;
+package com.stream.tubeoh.dto;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
